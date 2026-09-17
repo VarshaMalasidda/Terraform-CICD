@@ -15,7 +15,8 @@ pipeline {
                  script{
                         dir("terraform")
                         {
-                            git "https://github.com/VarshaMalasidda/Terraform-CICD.git"
+                           git branch: 'main',
+                            url: 'https://github.com/VarshaMalasidda/Terraform-CICD.git'
                         }
                     }
                 }
